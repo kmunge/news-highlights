@@ -1,0 +1,13 @@
+{% extends 'bootstrap/base.html'%}
+
+{% block styles%}
+{{ super() }}
+<link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Merienda" rel="stylesheet">
+<link rel="stylesheet" href="{{url_for('static',filename='css/index.css')}}">
+<link rel="stylesheet" href="{{url_for('static',filename='css/articles.css')}}">
+<link href="https://fonts.googleapis.com/css?family=Boogaloo|Domine|Gloria+Hallelujah|Merienda" rel="stylesheet">
+{% endblock %}
+
+{% block navbar %}
+    {% include 'navbar.html' %}
+{% endblock %}
