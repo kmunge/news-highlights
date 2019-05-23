@@ -1,0 +1,15 @@
+h3 {
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size: 250%;
+    text-decoration: underline
+}
+
+.welcome {
+    color: aliceblue;
+    text-align: center;
+}
+
+.jumboheading {
+    font-size: 300%;
+    color: aliceblue;
+}
