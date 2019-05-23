@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% block content%}
+<div class="container">
+    <div class="well">
+        <div class="jumbotron" style="background-color:rgba(99, 6, 71, 0.418)">
+            <h2 class="heading text-center"><strong>{{id}}</strong></h2>
+        </div>
+
+        <div class="row">
+            {% for article in source %}
+            <div class="col-md-12" style="height:50%">
+                <div class="card">
+                    <img class="card-img-top img-responsive" src={{article.urlToImage}} alt="Article Image">
+                    <div class="card-body">
+                        <h2 class="card-title">{{article.title}}</h2>
+                        <p class="card-text">{{article.description}}</p>
+                        <div class="card-footer">
+                            <p class="card-text"><small class="text-muted">Posted By: <strong>{{article.author}}</strong></small></p>
+                            <p class="card-text"><small class="text-muted">Posted on: {{article.publishedAt}}</small></p>
+                            <a href={{article.url}} target="_blank">Read Full Article</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+{% endblock%}
