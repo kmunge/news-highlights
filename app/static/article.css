@@ -1,0 +1,9 @@
+.heading {
+    font-family: 'Boogaloo', cursive;
+    font-size: 400%;
+    text-decoration: underline;
+}
+
+.well {
+    background-color: rgba(233, 150, 122, 0.226);
+}
